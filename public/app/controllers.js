@@ -10,4 +10,10 @@ controllers.controller('AboutController', ['$scope', function($scope){
 
 controllers.controller('NeedsController', ['$scope', function($scope){
   $scope.message = 'Hello I am the NEEDS PAGE';
+  $scope.needs=[];
+
+  $scope.addNeeds = function(thingy){
+    $scope.needs.push(thingy);
+    $scope.newNeed='';
+  }
 }]);
