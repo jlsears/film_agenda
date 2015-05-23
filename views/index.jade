@@ -1,20 +1,5 @@
 extends layout
 
 block content
-  h1= title
-  h3 Behold... the {{description}}!
-
-  input(type="text", ng-model='adj')
-  h3 To paraphrase Hunter S. Thompson, {{adj}}
-
-  label Click to show a message:
-    input(type='checkbox', ng-model='seeMessage')
-  h4 Check it out: {{seeMessage}}
-  h1(ng-show='seeMessage') There is no spoon
-
-  pre{{favetheaters | json}}
-
-  p Search:
-  input(type='text', ng-model='query')
-  ul
-    li(ng-repeat='theater in favetheaters | filter:query') A great theater to check out if you can is the {{theater.name}}, located in {{theater.location}}. Best drink in the house is the {{theater.best_drink}}.
+  h1 = title
+  p Welcome to #{title}
